@@ -1,59 +1,19 @@
 body {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-}
-
-.welcome-text {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff7eb3);
     color: white;
-    font-size: 36px;
-    font-weight: bold;
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}/* style.css */
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
     text-align: center;
-    padding: 50px;
-}
-
-h1 {
-    color: #ff6600;
-    font-size: 36px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-body {
-    background: linear-gradient(45deg, #1e3c72, #2a5298);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-family: Arial, sans-serif;
 }
 
-h1 {
-    font-size: 40px;
-    animation: fadeIn 2s ease-in-out infinite alternate;
+.container {
+    animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
