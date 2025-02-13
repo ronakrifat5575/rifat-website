@@ -1,54 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff7eb3);
-    color: white;
+    background-color: #f4f4f4;
     text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}.banner {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-bottom: 5px solid white;
+    font-family: Arial, sans-serif;
 }
-
-.container {
+h1 {
+    font-size: 40px;
+    color: #333;
     animation: fadeIn 2s ease-in-out;
 }
-
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-/* Navigation Bar Styling */
-nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #007bff;
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
