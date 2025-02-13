@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বঙ্গবল্টু গেম</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        #game-container { margin-top: 20px; }
+        button { padding: 10px 20px; font-size: 18px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>বঙ্গবল্টু গেমে স্বাগতম!</h1>
+    <div id="game-container">
+        <p id="question">আপনার জন্য একটি প্রশ্ন:</p>
+        <button onclick="generateQuestion()">নতুন প্রশ্ন</button>
+    </div>
+    <script>
+        const questions = [
+            "আজকের মজার খবর কী?",
+            "যদি তুমি প্রধানমন্ত্রী হতে, কী করতা?",
+            "সবচেয়ে হাস্যকর আইন কোনটি?",
+            "বাংলাদেশের সবচেয়ে বিখ্যাত খাবার কী?",
+            "যদি ১ কোটি টাকা পাও, কী করবে?"
+        ];
+
+        function generateQuestion() {
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            document.getElementById("question").innerText = questions[randomIndex];
+        }
+    </script>
+</body>
+</html>
