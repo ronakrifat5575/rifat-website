@@ -1,0 +1,17 @@
+body {background-image: url('background.jpg');
+background-size: cover;
+background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* ডার্ক ব্যাকগ্রাউন্ড */
+}
+
+canvas {
+    border: 2px solid white;
+    background-image: url('background.jpg'); /* পছন্দের ব্যাকগ্রাউন্ড ইমেজ */
+    background-size: cover;
+}
